@@ -3721,16 +3721,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+var ENV = 'development';
+
 var app = new Vue({
     el: '#app',
     router: __WEBPACK_IMPORTED_MODULE_1__routes__["a" /* default */],
 
-    mounted: function mounted() {
-        axios.get('https://raw.githubusercontent.com/aldovelco/aldovelco.github.io/status/down').then(function (response) {
-            if (response.status === 200) {
-                window.location.replace('./public/down.html');
+    data: {
+        env: ENV
+    },
+
+    methods: {
+        isDown: function isDown() {
+            if (this.env === 'production') {
+                axios.get('https://raw.githubusercontent.com/aldovelco/aldovelco.github.io/status/down').then(function (response) {
+                    if (response.status === 200) {
+                        window.location.replace('./public/down.html');
+                    }
+                });
             }
-        });
+        }
+    },
+
+    mounted: function mounted() {
+        this.isDown();
     }
 });
 
