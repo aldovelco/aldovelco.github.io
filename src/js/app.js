@@ -8,7 +8,8 @@ const app = new Vue({
     router,
 
     data: {
-        env: ENV
+        env: ENV,
+        isMenuActive: false
     },
 
     methods: {
@@ -20,10 +21,14 @@ const app = new Vue({
                     }
                 });
             }
+        },
+
+        toggleMenu() {
+            this.isMenuActive ? this.isMenuActive = false : this.isMenuActive = true;
         }
     },
 
     mounted() {
-        isDown();
+        this.isDown();
     }
 });

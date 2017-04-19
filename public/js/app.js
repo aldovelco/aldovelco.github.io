@@ -3728,7 +3728,8 @@ var app = new Vue({
     router: __WEBPACK_IMPORTED_MODULE_1__routes__["a" /* default */],
 
     data: {
-        env: ENV
+        env: ENV,
+        isMenuActive: false
     },
 
     methods: {
@@ -3740,11 +3741,14 @@ var app = new Vue({
                     }
                 });
             }
+        },
+        toggleMenu: function toggleMenu() {
+            this.isMenuActive ? this.isMenuActive = false : this.isMenuActive = true;
         }
     },
 
     mounted: function mounted() {
-        isDown();
+        this.isDown();
     }
 });
 

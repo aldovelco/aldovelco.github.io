@@ -24,12 +24,12 @@
                                 <a href="#/" id="logo" class="nav-item is-active">aldovelco</a>
                             </a>
                         </div>
-                        <span class="nav-toggle">
+                        <span class="nav-toggle" :class="{'is-active': isMenuActive}" @click="toggleMenu()">
                         <span></span>
                         <span></span>
                         <span></span>
                         </span>
-                        <div class="nav-right nav-menu">
+                        <div class="nav-right nav-menu" :class="{'is-active': isMenuActive}">
                             <router-link to="/" class="nav-item" exact>Home</router-link>
                             <router-link to="/about" class="nav-item">About</router-link>
                             <router-link to="/contact" class="nav-item">Contact</router-link>
