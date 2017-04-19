@@ -1,6 +1,9 @@
 import './bootstrap';
 import router from './routes';
 
+// Components
+import Hero from './components/Hero.vue';
+
 const ENV = 'development';
 
 const app = new Vue({
@@ -28,7 +31,11 @@ const app = new Vue({
         }
     },
 
-    mounted() {
+    created() {
         this.isDown();
+    },
+
+    components: {
+        Hero
     }
 });
