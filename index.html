@@ -24,31 +24,31 @@
                                 <a href="#/" id="logo" class="nav-item is-active">aldovelco</a>
                             </a>
                         </div>
-                        <span class="nav-toggle">
-                        <span></span>
+                        <span class="nav-toggle" :class="{'is-active': isMenuActive}" @click="toggleMenu()">
+                  <span></span>
                         <span></span>
                         <span></span>
                         </span>
-                        <div class="nav-right nav-menu">
+                        <div class="nav-right nav-menu" :class="{'is-active': isMenuActive}">
                             <router-link to="/" class="nav-item" exact>Home</router-link>
                             <router-link to="/about" class="nav-item">About</router-link>
                             <router-link to="/contact" class="nav-item">Contact</router-link>
 
                             <span class="nav-item">
-                            <a href="https://github.com/aldovelco" class="is-primary">
-                                <span class="icon"><i class="fa fa-github"></i></span>
+                      <a href="https://github.com/aldovelco" class="is-primary">
+                          <span class="icon"><i class="fa fa-github"></i></span>
                             </a>
                             </span>
 
                             <span class="nav-item">
-                            <a href="https://twitter.com/aldovelco" class="is-primary">
-                                <span class="icon"><i class="fa fa-twitter"></i></span>
+                      <a href="https://twitter.com/aldovelco" class="is-primary">
+                          <span class="icon"><i class="fa fa-twitter"></i></span>
                             </a>
                             </span>
 
                             <span class="nav-item">
-                            <a href="https://www.linkedin.com/in/aldovelco/" class="is-primary">
-                                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                      <a href="https://www.linkedin.com/in/aldovelco/" class="is-primary">
+                          <span class="icon"><i class="fa fa-linkedin"></i></span>
                             </a>
                             </span>
                         </div>
@@ -68,20 +68,20 @@
 
                     <div class="">
                         <span class="">
-                            <a href="https://github.com/aldovelco" class="is-primary">
-                                <span class="icon"><i class="fa fa-github"></i></span>
+                      <a href="https://github.com/aldovelco" class="is-primary">
+                          <span class="icon"><i class="fa fa-github"></i></span>
                         </a>
                         </span>
 
                         <span class="">
-                            <a href="https://twitter.com/aldovelco" class="is-primary">
-                                <span class="icon"><i class="fa fa-twitter"></i></span>
+                      <a href="https://twitter.com/aldovelco" class="is-primary">
+                          <span class="icon"><i class="fa fa-twitter"></i></span>
                         </a>
                         </span>
 
                         <span class="">
-                            <a href="https://www.linkedin.com/in/aldovelco/" class="is-primary">
-                                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                      <a href="https://www.linkedin.com/in/aldovelco/" class="is-primary">
+                          <span class="icon"><i class="fa fa-linkedin"></i></span>
                         </a>
                         </span>
                     </div>
