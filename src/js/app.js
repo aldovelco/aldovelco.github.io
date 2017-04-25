@@ -2,7 +2,13 @@ import './bootstrap';
 import router from './routes';
 
 // Components
+import FontAwesomeIcon from './components/FontAwesomeIcon.vue';
+import Avatar from './components/Avatar.vue';
 import Hero from './components/Hero.vue';
+import Level from './components/Level.vue';
+import LevelItem from './components/LevelItem.vue';
+import Heading from './components/Heading.vue';
+
 
 const ENV = 'development';
 
@@ -12,7 +18,11 @@ const app = new Vue({
 
     data: {
         env: ENV,
-        isMenuActive: false
+        isMenuActive: false,
+        heading: {
+            title: 'Aldo Velasco',
+            subtitle: 'Software Developer'
+        }
     },
 
     methods: {
@@ -24,10 +34,6 @@ const app = new Vue({
                     }
                 });
             }
-        },
-
-        toggleMenu() {
-            this.isMenuActive ? this.isMenuActive = false : this.isMenuActive = true;
         }
     },
 
@@ -36,6 +42,11 @@ const app = new Vue({
     },
 
     components: {
-        Hero
+        'x-hero': Hero,
+        'x-avatar': Avatar,
+        'x-fa': FontAwesomeIcon,
+        'x-level': Level,
+        'x-level-item': LevelItem,
+        'x-heading': Heading
     }
 });

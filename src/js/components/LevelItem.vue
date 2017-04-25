@@ -1,9 +1,10 @@
 <template>
-    <h1 class="title">Contact</h1>
+  <div class="level-item">
+    <slot></slot>
+  </div>
 </template>
 
 <script>
-
 </script>
 
 <style lang="scss" scoped>
