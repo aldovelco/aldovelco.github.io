@@ -4,7 +4,7 @@
       <slot name="image"></slot>
     </div>
     <div class="card-content">
-      <slot name="content"></slot>
+      <slot></slot>
     </div>
     <div class="card-footer">
       <slot name="footer"></slot>

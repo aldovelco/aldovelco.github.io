@@ -4869,6 +4869,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
 
 
 
@@ -4931,18 +4934,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 42 */
-/***/ (function(module, exports) {
-
-//
-//
-//
-//
-//
-//
-//
-
-/***/ }),
-/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4953,6 +4944,28 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    'x-card': __WEBPACK_IMPORTED_MODULE_0__components_Card_vue___default.a
+  }
+});
+
+/***/ }),
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Card_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Card_vue__);
 //
 //
 //
@@ -5004,7 +5017,7 @@ window.axios = __WEBPACK_IMPORTED_MODULE_2_axios___default.a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(13);
 
 
-var routes = [{ path: '/', component: __webpack_require__(65) }, { path: '/about', component: __webpack_require__(64) }];
+var routes = [{ path: '/', component: __webpack_require__(65) }, { path: '/about', component: __webpack_require__(64) }, { path: '/blog', component: __webpack_require__(89) }];
 
 /* harmony default export */ __webpack_exports__["a"] = (new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
     routes: routes,
@@ -7370,7 +7383,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "card-image"
   }, [_vm._t("image")], 2), _vm._v(" "), _c('div', {
     staticClass: "card-content"
-  }, [_vm._t("content")], 2), _vm._v(" "), _c('div', {
+  }, [_vm._t("default")], 2), _vm._v(" "), _c('div', {
     staticClass: "card-footer"
   }, [_vm._t("footer")], 2)])
 },staticRenderFns: []}
@@ -7417,7 +7430,13 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "to": "/about",
       "tag": "li"
     }
-  }, [_c('a', [_vm._v("About")])]), _vm._v(" "), _c('x-level', {
+  }, [_c('a', [_vm._v("About")])]), _vm._v(" "), _c('router-link', {
+    staticClass: "nav-item",
+    attrs: {
+      "to": "/blog",
+      "tag": "li"
+    }
+  }, [_c('a', [_vm._v("Blog")])]), _vm._v(" "), _c('x-level', {
     attrs: {
       "mobile": true
     }
@@ -7475,7 +7494,17 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "to": "/about",
       "tag": "li"
     }
-  }, [_c('a', [_vm._v("About")])])], 1)])])])])
+  }, [_c('a', [_vm._v("About")])]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": "/blog",
+      "tag": "li"
+    }
+  }, [_c('a', [_vm._v("Blog")])]), _vm._v(" "), _c('router-link', {
+    attrs: {
+      "to": "/contact",
+      "tag": "li"
+    }
+  }, [_c('a', [_vm._v("Contact")])])], 1)])])])])
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "nav-left"
@@ -7547,14 +7576,12 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "content"
   }, [_c('h1', {
     staticClass: "title"
-  }, [_vm._v("About")]), _vm._v(" "), _c('p', [_vm._v("I'm a software developer who cares about delivering quality products that satisfies client's needs. I am used to working on time constrained projects and thrive in such environments. One of my hobbies is keeping up with new trends and technologies because I have a knack for learning. Finally, I'd love to find a company in which I can further develop my skills and advance in my career.")])])
-}]}
+  }, [_vm._v("About")]), _vm._v(" "), _c('x-card', [_c('p', [_vm._v("I'm a software developer who cares about delivering quality products that satisfies client's needs. I am used to working on time constrained projects and thrive in such environments. One of my hobbies is keeping up with new trends and technologies because I have a knack for learning. Finally, I'd love to find a company in which I can further develop my skills and advance in my career.")])])], 1)
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
@@ -7572,11 +7599,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "content"
   }, [_c('h1', {
     staticClass: "title"
-  }, [_vm._v("Home")]), _vm._v(" "), _c('x-card', [_c('div', {
-    slot: "content"
-  }, [_c('div', {
-    staticClass: "content"
-  }, [_c('p', [_vm._v("\n          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!\n        ")])])])])], 1)
+  }, [_vm._v("Home")]), _vm._v(" "), _c('x-card', [_c('p', [_vm._v("\n      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!\n    ")])])], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -17245,6 +17268,368 @@ module.exports = Vue$3;
 __webpack_require__(15);
 module.exports = __webpack_require__(16);
 
+
+/***/ }),
+/* 87 */,
+/* 88 */,
+/* 89 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+/* styles */
+__webpack_require__(93)
+
+var Component = __webpack_require__(2)(
+  /* script */
+  __webpack_require__(90),
+  /* template */
+  __webpack_require__(92),
+  /* scopeId */
+  "data-v-a5e85e32",
+  /* cssModules */
+  null
+)
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\views\\Blog.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] Blog.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-a5e85e32", Component.options)
+  } else {
+    hotAPI.reload("data-v-a5e85e32", Component.options)
+  }
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 90 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Card_vue__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_Card_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_Card_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      newPost: {
+        title: '',
+        subtitle: '',
+        body: ''
+      },
+      posts: [{
+        id: 0,
+        title: 'Test',
+        subtitle: 'Test',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!'
+      }, {
+        id: 1,
+        title: 'Test',
+        subtitle: 'Test',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!'
+      }, {
+        id: 2,
+        title: 'Test',
+        subtitle: 'Test',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!'
+      }, {
+        id: 3,
+        title: 'Test',
+        subtitle: 'Test',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!'
+      }]
+    };
+  },
+
+
+  methods: {
+    addPost: function addPost() {
+      // TODO: Add logic to return if validation doesn't pass
+      this.validateInputs();
+
+      this.posts.push({
+        id: this.posts.length + 1,
+        title: this.newPost.title,
+        subtitle: this.newPost.subtitle,
+        body: this.newPost.body
+      });
+
+      this.clearInputs();
+    },
+    validateInputs: function validateInputs() {
+      if (this.newPost.title === '') {
+        console.log('New post title is required.');
+        this.$refs.titleInput.focus();
+
+        return;
+      }
+
+      if (this.newPost.body === '') {
+        console.debug('New post body is required.');
+        this.$refs.bodyInput.focus();
+
+        return;
+      }
+
+      // TODO: Add danger classes to required inputs if empty
+    },
+    clearInputs: function clearInputs() {
+      this.newPost.title = '';
+      this.newPost.subtitle = '';
+      this.newPost.body = '';
+    }
+  },
+
+  components: {
+    'x-card': __WEBPACK_IMPORTED_MODULE_0__components_Card_vue___default.a
+  }
+});
+
+/***/ }),
+/* 91 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(1)();
+exports.push([module.i, "\n.post[data-v-a5e85e32] {\n  margin-bottom: 2em;\n}\n", ""]);
+
+/***/ }),
+/* 92 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "content"
+  }, [_c('h1', {
+    staticClass: "title"
+  }, [_vm._v("Blog "), _c('span', {
+    staticClass: "tag is-light"
+  }, [_vm._v(_vm._s(_vm.posts.length))])]), _vm._v(" "), _vm._l((_vm.posts), function(post) {
+    return _c('x-card', {
+      key: post.id,
+      staticClass: "post"
+    }, [_c('h2', {
+      staticClass: "title is-4"
+    }, [_vm._v(_vm._s(post.title))]), _vm._v(" "), _c('h3', {
+      staticClass: "subtitle is-6"
+    }, [_vm._v(_vm._s(post.subtitle))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(post.body))])])
+  }), _vm._v(" "), _c('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+      }
+    }
+  }, [_c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label"
+  }, [_vm._v("Title")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.newPost.title),
+      expression: "newPost.title"
+    }],
+    ref: "titleInput",
+    staticClass: "input",
+    attrs: {
+      "type": "text",
+      "placeholder": "Put your title here!"
+    },
+    domProps: {
+      "value": (_vm.newPost.title)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.newPost.title = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _vm._m(0), _vm._v(" "), _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label"
+  }, [_vm._v("Subtitle")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.newPost.subtitle),
+      expression: "newPost.subtitle"
+    }],
+    staticClass: "input",
+    attrs: {
+      "type": "text",
+      "placeholder": "(Optional)"
+    },
+    domProps: {
+      "value": (_vm.newPost.subtitle)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.newPost.subtitle = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label"
+  }, [_vm._v("Body")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('textarea', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.newPost.body),
+      expression: "newPost.body"
+    }],
+    staticClass: "textarea",
+    attrs: {
+      "placeholder": "Your content goes here"
+    },
+    domProps: {
+      "value": (_vm.newPost.body)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.newPost.body = $event.target.value
+      }
+    }
+  })])]), _vm._v(" "), _c('div', {
+    staticClass: "field is-grouped"
+  }, [_c('p', {
+    staticClass: "control"
+  }, [_c('button', {
+    staticClass: "button is-primary",
+    on: {
+      "click": _vm.addPost
+    }
+  }, [_vm._v("Submit")])]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('button', {
+    staticClass: "button is-link",
+    on: {
+      "click": _vm.clear
+    }
+  }, [_vm._v("Cancel")])])])])], 2)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', {
+    staticClass: "field"
+  }, [_c('label', {
+    staticClass: "label"
+  }, [_vm._v("Username")]), _vm._v(" "), _c('p', {
+    staticClass: "control"
+  }, [_c('input', {
+    staticClass: "input is-success",
+    attrs: {
+      "type": "text",
+      "placeholder": "Text input",
+      "value": "bulma"
+    }
+  })]), _vm._v(" "), _c('p', {
+    staticClass: "help is-success"
+  }, [_vm._v("This username is available")])])
+}]}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-a5e85e32", module.exports)
+  }
+}
+
+/***/ }),
+/* 93 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(91);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(3)("76ea95bc", content, false);
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-a5e85e32\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Blog.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"id\":\"data-v-a5e85e32\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Blog.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

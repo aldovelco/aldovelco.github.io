@@ -17,6 +17,7 @@
           <div class="nav-right nav-menu" :class="menuClass">
             <router-link to="/" tag="li" class="nav-item" exact><a>Home</a></router-link>
             <router-link to="/about" tag="li" class="nav-item"><a>About</a></router-link>
+            <router-link to="/blog" tag="li" class="nav-item"><a>Blog</a></router-link>
 
             <x-level :mobile="true">
               <span class="nav-item level-item">
@@ -57,6 +58,8 @@
           <ul>
             <router-link to="/" tag="li" exact><a>Home</a></router-link>
             <router-link to="/about" tag="li"><a>About</a></router-link>
+            <router-link to="/blog" tag="li"><a>Blog</a></router-link>
+            <router-link to="/contact" tag="li"><a>Contact</a></router-link>
           </ul>
         </div>
       </nav>
