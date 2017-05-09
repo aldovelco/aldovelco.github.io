@@ -78,10 +78,6 @@ const app = new Vue({
         }
     },
 
-    created() {
-        this.isDown();
-    },
-
     mounted() {
         bus.$on('notify', (data) => {
             this.notification.active = true;
@@ -96,16 +92,6 @@ const app = new Vue({
     },
 
     methods: {
-        isDown() {
-            if (this.env === 'production') {
-                axios.get('https://raw.githubusercontent.com/aldovelco/aldovelco.github.io/status/down').then(response => {
-                    if (response.status === 200) {
-                        window.location.replace('./public/down.html');
-                    }
-                });
-            }
-        },
-
         tryLogin() {
             this.store.user = this.login.username;
 
