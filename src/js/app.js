@@ -92,6 +92,14 @@ const app = new Vue({
     },
 
     methods: {
+        showLogin() {
+            this.login.activeModal = true;
+
+            this.$nextTick(() => {
+                this.$refs.userInput.focus();
+            });
+        },
+
         tryLogin() {
             this.store.user = this.login.username;
 

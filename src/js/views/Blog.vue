@@ -8,7 +8,7 @@
       </div>
       <div class="column is-1">
         <span class="icon is-large addPost" v-if="store.user">
-          <i class="fa fa-plus-circle" @click="isActiveModal = true" title="Add a new post"></i>
+          <i class="fa fa-plus-circle" @click="showNewPost" title="Add a new post"></i>
         </span>
       </div>
     </div>
@@ -56,6 +56,14 @@ export default {
   },
 
   methods: {
+    showNewPost() {
+      this.isActiveModal = true;
+
+      this.$nextTick(() => {
+        this.$refs.titleInput.focus();
+      });
+    },
+
     onSubmit() {
       bus.$emit('notify', {
         type: 'info',

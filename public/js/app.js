@@ -839,6 +839,15 @@ var app = new Vue({
 
 
     methods: {
+        showLogin: function showLogin() {
+            var _this2 = this;
+
+            this.login.activeModal = true;
+
+            this.$nextTick(function () {
+                _this2.$refs.userInput.focus();
+            });
+        },
         tryLogin: function tryLogin() {
             this.store.user = this.login.username;
 
@@ -1160,7 +1169,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\Card.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\Card.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Card.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -1198,7 +1207,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\FontAwesomeIcon.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\FontAwesomeIcon.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] FontAwesomeIcon.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -1503,7 +1512,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\Dropdown.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\Dropdown.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Dropdown.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -1541,7 +1550,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\Level.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\Level.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Level.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -1579,7 +1588,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\Modal.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\Modal.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Modal.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -5476,6 +5485,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
 
   methods: {
+    showNewPost: function showNewPost() {
+      var _this = this;
+
+      this.isActiveModal = true;
+
+      this.$nextTick(function () {
+        _this.$refs.titleInput.focus();
+      });
+    },
     onSubmit: function onSubmit() {
       __WEBPACK_IMPORTED_MODULE_0__app_js__["bus"].$emit('notify', {
         type: 'info',
@@ -7773,7 +7791,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\Avatar.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\Avatar.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Avatar.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -7811,7 +7829,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\Heading.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\Heading.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Heading.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -7849,7 +7867,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\Hero.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\Hero.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Hero.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -7887,7 +7905,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\LevelItem.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\LevelItem.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] LevelItem.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -7925,7 +7943,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\NewPost.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\NewPost.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] NewPost.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -7963,7 +7981,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\components\\Notification.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\components\\Notification.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Notification.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -8001,7 +8019,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\views\\About.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\views\\About.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] About.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -8039,7 +8057,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\views\\Blog.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\views\\Blog.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Blog.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -8077,7 +8095,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\views\\Contact.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\views\\Contact.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Contact.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -8115,7 +8133,7 @@ var Component = __webpack_require__(1)(
   /* cssModules */
   null
 )
-Component.options.__file = "C:\\Users\\aldov\\code\\aldovelco.github.io\\src\\js\\views\\Home.vue"
+Component.options.__file = "C:\\Users\\aldo.covarrubias\\code\\aldovelco.github.io\\src\\js\\views\\Home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key !== "__esModule"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] Home.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -8744,9 +8762,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "title": "Add a new post"
     },
     on: {
-      "click": function($event) {
-        _vm.isActiveModal = true
-      }
+      "click": _vm.showNewPost
     }
   })]) : _vm._e()])]), _vm._v(" "), (_vm.isActiveModal) ? _c('x-modal', {
     on: {
