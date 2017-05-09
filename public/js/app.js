@@ -783,6 +783,21 @@ var store = {
         title: 'Test',
         subtitle: 'Test',
         body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!'
+    }, {
+        id: 4,
+        title: 'Good Goodbye',
+        subtitle: 'Linkin Park feat. Stormzy & Pusha T',
+        body: '[Chorus: Chester Bennington]\nSo say goodbye and hit the road\nPack it up and disappear\nYou better have some place to go\n\'Cause you can\'t come back around here\nGood goodbye\n(Don\'t you come back no more)\n\n[Verse 1: Mike Shinoda]\nLive from the rhythm, it\'s\nSomething wild, venomous\nEnemies trying to read me\nYou\'re all looking highly illiterate\nBlindly forgetting if I\'m in the mix\nYou won\'t find an equivalent\nI\'ve been here killing it\nLonger than you\'ve been alive, you idiot\nAnd it makes you so mad\nSomebody else could be stepping in front of you\nAnd it makes you so mad that you\'re not the only one\nThere\'s more than one of you\nAnd you can\'t understand the fact\nThat it\'s over and done, hope you had fun\nYou\'ve got a lot to discuss on the bus\nHeaded back where you\'re from\n\n[Chorus: Chester Bennington]\nSo say goodbye and hit the road\nPack it up and disappear\nYou better have some place to go\n\'Cause you can\'t come back around here\nGood goodbye\nGood goodbye\nGood goodbye\nGood goodbye\nGood goodbye\n\n[Verse 2: Pusha T]\nGoodbye, good riddance\nA period is after every sentence\nDid my time with my cellmate\nMaxed out so now we finished\nEvery day was like a hail date\nEvery night was like a hailstorm\nTook her back to my tinted windows\nShowin\' out, she in rare form\nWings up, now I\'m airborne\nKing Push, they got a chair for him\nMake way for the new queen\nThe old lineup, where they cheer for \'em\nConsequence when you ain\'t there for him\nWere you there for him?\nDid you care for him?\nYou were dead wrong\n\n[Chorus: Chester Bennington]\n(Don\'t you come back no more)\nSo say goodbye and hit the road\nPack it up and disappear\nYou better have some place to go\n\'Cause you can\'t come back around here\nGood goodbye\nGood goodbye\n(Don\'t you come back no more)\nGood goodbye\nGood goodbye\n(Don\'t you come back no more)\n\n[Verse 3: Stormzy]\nYo\nLet me say goodbye to my demons\nLet me say goodbye to my past life\nLet me say goodbye to the darkness\nTell \'em that I\'d rather be here in the starlight\nTell \'em that I\'d rather be here where they love me\nTell \'em that I\'m yours this is our life\nAnd I still keep raising the bar like\nNever seen a young black brother in the chart twice\nGoodbye to the stereotypes\nYou can\'t tell my kings we can\'t\nMandem we\'re linking tings in parks\nNow I got a tune with Linkin Park\nLike goodbye to my old hoe\u2019s\nGoodbye to the cold roads\nI can\'t die for my postcode\nYoung little Mike from the Gold Coast\nAnd now I\'m inside with my bro bro\'s\nGang\n\n[Chorus: Chester Bennington]\nSo say goodbye and hit the road\nPack it up and disappear\nYou better have some place to go\n\'Cause you can\'t come back around here\nGood goodbye\nGood goodbye\n(Don\'t you come back no more)\nGood goodbye\nGood goodbye\n(Don\'t you come back no more)'
+    }, {
+        id: 5,
+        title: 'Battle Symphony',
+        subtitle: 'Linkin Park',
+        body: '[Verse 1]\nI got a long way to go\nAnd a long memory\nI been searching for an answer\nAlways just out of reach\nBlood on the floor\nSirens repeat\nI been searching for the courage\nTo face my enemies\nWhen they turn down the lights\n\n[Chorus]\nI hear my battle symphony\nAll the world in front of me\nIf my armor breaks\nI\u2019ll fuse it back together\nBattle symphony\nPlease just don\u2019t give up on me\nAnd my eyes are wide awake\n\n[Bridge]\nFor my battle symphony\nFor my battle symphony\n\n[Verse 2]\nThey say that I don\u2019t belong\nSay that I should retreat\nThat I\u2019m marching to the rhythm\nOf a lonesome defeat\nBut the sound of your voice\nPuts the pain in reverse\nNo surrender, no illusions\nAnd for better or worse\nWhen they turn down the lights\n\n[Chorus]\nI hear my battle symphony\nAll the world in front of me\nIf my armor breaks\nI\u2019ll fuse it back together\nBattle symphony\nPlease just don\u2019t give up on me\nAnd my eyes are wide awake\n\n[Bridge]\nIf I fall, get knocked down\nPick myself up off the ground\nIf I fall, get knocked down\nPick myself up off the ground\nWhen they turn down the lights\n\n[Chorus]\nI hear my battle symphony\nAll the world in front of me\nIf my armor breaks\nI\u2019ll fuse it back together\nBattle symphony\nPlease just don\u2019t give up on me\nAnd my eyes are wide awake\nFor my battle symphony\nFor my battle symphony'
+    }, {
+        id: 6,
+        title: 'Heavy',
+        subtitle: 'Linkin Park feat. Kiara',
+        body: '[Verse 1: Chester Bennington]\nI don\u2019t like my mind right now\nStacking up problems that are so unnecessary\nWish that I could slow things down\nI wanna let go but there\u2019s comfort in the panic\nAnd I drive myself crazy\nThinking everything\'s about me\nYeah, I drive myself crazy\n\'Cause I can\u2019t escape the gravity\n\n[Chorus: Chester Bennington & Kiiara]\nI\'m holding on\nWhy is everything so heavy?\nHolding on\nSo much more than I can carry\nI keep dragging around what\'s bringing me down\nIf I just let go, I\'d be set free\nHolding on\nWhy is everything so heavy?\n\n[Verse 2: Kiiara]\nYou say that I\'m paranoid\nBut I\u2019m pretty sure the world is out to get me\nIt\u2019s not like I make the choice\nTo let my mind stay so fucking messy\nI know I\'m not the center of the universe\nBut you keep spinning \'round me just the same\nI know I\'m not the center of the universe\nBut you keep spinning \'round me just the same\n\n[Chorus: Kiiara]\nI\'m holding on\nWhy is everything so heavy?\nHolding on\nSo much more than I can carry\nI keep dragging around what\'s bringing me down\nIf I just let go, I\'d be set free\nHolding on\nWhy is everything so heavy?\n\n[Bridge: Chester Bennington & Kiiara]\nI know I\'m not the center of the universe\nBut you keep spinning \'round me just the same\nI know I\'m not the center of the universe\nBut you keep spinning \'round me just the same\nAnd I drive myself crazy\nThinking everything\u2019s about me\n\n[Chorus: Chester Bennington & Kiiara]\nHolding on\nWhy is everything so heavy?\nHolding on\nSo much more than I can carry\nI keep dragging around what\'s bringing me down\nIf I just let go, I\'d be set free\nHolding on\nWhy is everything so heavy?\nWhy is everything so heavy?\nWhy is everything so heavy?'
     }]
 };
 
@@ -5451,6 +5466,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -5474,6 +5493,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       isActiveModal: false
     };
   },
+  created: function created() {
+    this.posts.map(function (post) {
+      post.seeMore = false;
+
+      return post;
+    });
+  },
 
 
   computed: {
@@ -5481,10 +5507,19 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       return this.posts.sort(function (a, b) {
         return a.id < b.id;
       });
+    },
+    seeMoreBtn: function seeMoreBtn() {
+      return {};
     }
   },
 
   methods: {
+    isOverflown: function isOverflown(element) {
+      return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+    },
+    more: function more(post) {
+      post.seeMore = true;
+    },
     showNewPost: function showNewPost() {
       var _this = this;
 
@@ -7660,7 +7695,7 @@ exports.push([module.i, "", ""]);
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
-exports.push([module.i, "\n.post[data-v-a5e85e32] {\n  margin-bottom: 2em;\n}\n.post .body[data-v-a5e85e32] {\n    white-space: pre-wrap;\n}\n.addPost[data-v-a5e85e32] {\n  border-radius: 50%;\n  background-color: #00d1b2;\n  color: white;\n  cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.post[data-v-a5e85e32] {\n  margin-bottom: 2em;\n  max-height: 30em;\n  overflow-y: hidden;\n  position: relative;\n}\n.post .see-more[data-v-a5e85e32] {\n    max-height: inherit;\n    overflow-y: inherit;\n}\n.post .body[data-v-a5e85e32] {\n    white-space: pre-wrap;\n}\n.addPost[data-v-a5e85e32] {\n  border-radius: 50%;\n  background-color: #00d1b2;\n  color: white;\n  cursor: pointer;\n}\n", ""]);
 
 /***/ }),
 /* 70 */
@@ -8777,14 +8812,33 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   })], 1) : _vm._e(), _vm._v(" "), _vm._l((_vm.latestPosts), function(post) {
     return _c('x-card', {
       key: post.id,
-      staticClass: "post"
+      staticClass: "post",
+      class: {
+        'see-more': post.seeMore
+      }
     }, [_c('h2', {
       staticClass: "title is-4"
     }, [_vm._v(_vm._s(post.title))]), _vm._v(" "), _c('h3', {
       staticClass: "subtitle is-6"
     }, [_vm._v(_vm._s(post.subtitle))]), _vm._v(" "), _c('p', {
       staticClass: "body"
-    }, [_vm._v(_vm._s(post.body))])])
+    }, [_vm._v(_vm._s(post.body))]), _vm._v(" "), _c('p', {
+      staticClass: "has-text-centered"
+    }, [_c('button', {
+      directives: [{
+        name: "show",
+        rawName: "v-show",
+        value: (!post.seeMore),
+        expression: "!post.seeMore"
+      }],
+      staticClass: "button btn-see-more",
+      class: _vm.seeMoreBtn,
+      on: {
+        "click": function($event) {
+          _vm.more(post)
+        }
+      }
+    }, [_vm._v("See more")])])])
   })], 2)
 },staticRenderFns: []}
 module.exports.render._withStripped = true

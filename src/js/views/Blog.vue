@@ -17,10 +17,14 @@
       <x-new-post :on-submit="onSubmit"></x-new-post>
     </x-modal>
   
-    <x-card v-for="post in latestPosts" :key="post.id" class="post">
+    <x-card v-for="post in latestPosts" :key="post.id" class="post" :class="{'see-more': post.seeMore}">
       <h2 class="title is-4">{{ post.title }}</h2>
       <h3 class="subtitle is-6">{{ post.subtitle }}</h3>
       <p class="body">{{ post.body }}</p>
+  
+      <p class="has-text-centered">
+        <button class="button btn-see-more" v-show="!post.seeMore" :class="seeMoreBtn" @click="more(post)">See more</button>
+      </p>
     </x-card>
   </div>
 </template>
@@ -49,13 +53,35 @@ export default {
     }
   },
 
+  created() {
+    this.posts.map(post => {
+      post.seeMore = false;
+
+      return post;
+    });
+  },
+
   computed: {
     latestPosts() {
       return this.posts.sort((a, b) => a.id < b.id);
+    },
+
+    seeMoreBtn() {
+      return {
+
+      }
     }
   },
 
   methods: {
+    isOverflown(element) {
+      return element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth;
+    },
+
+    more(post) {
+      post.seeMore = true;
+    },
+
     showNewPost() {
       this.isActiveModal = true;
 
@@ -78,6 +104,14 @@ export default {
 <style lang="scss" scoped>
 .post {
   margin-bottom: 2em;
+  max-height: 30em;
+  overflow-y: hidden;
+  position: relative;
+
+  .see-more {
+    max-height: inherit;
+    overflow-y: inherit;
+  }
 
   .body {
     white-space: pre-wrap;
