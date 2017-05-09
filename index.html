@@ -38,6 +38,37 @@
             </template>
         </x-hero>
 
+        <transition name="bounce">
+            <x-notification v-if="notification.active" :type="notification.type" @dismiss="notification.active = false" :dismissable="notification.dismissable" :timer="3">
+                {{notification.message}}
+            </x-notification>
+        </transition>
+
+        <button class="button" @click="login.activeModal = true">Login</button>
+        <x-modal v-if="login.activeModal" @close="login.activeModal = false">
+            <form @submit.prevent>
+                <div class="field">
+                    <label class="label">Username<span> *</span></label>
+                    <p class="control">
+                        <input class="input" type="text" placeholder="Username" ref="userInput" v-model="login.username" required>
+                    </p>
+                </div>
+
+                <div class="field">
+                    <label class="label">Password<span> *</span></label>
+                    <p class="control">
+                        <input class="input" type="password" placeholder="Password" ref="passwordInput" v-model="login.password" required>
+                    </p>
+                </div>
+
+                <div class="field">
+                    <p class="control">
+                        <button class="button is-primary" @click="tryLogin" :disabled="! (login.username && login.password)">Login</button>
+                    </p>
+                </div>
+            </form>
+        </x-modal>
+
         <section class="section">
             <div class="container">
                 <transition>

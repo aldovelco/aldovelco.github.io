@@ -11,28 +11,42 @@
       <section class="modal-card-body">
         <slot></slot>
       </section>
-      <footer class="modal-card-foot">
-        <slot name="card-footer">
-          <a class="button is-success">Submit</a>
-          <a class="button" @click="close">Cancel</a>
-        </slot>
-      </footer>
+      <!--<footer class="modal-card-foot">
+            <slot name="card-footer">
+            </slot>
+          </footer>-->
     </div>
   </div>
 </template>
 
 <script>
 export default {
+  props: {
+    escape: {
+      type: Boolean,
+      default: true
+    },
+    onClose: {
+      type: Function
+    }
+  },
+
   mounted() {
-    document.addEventListener('keydown', (e) => {
-      if (e.keyCode == 27) {
-        this.close();
-      }
-    });
+    if (this.escape === true) {
+      document.addEventListener('keydown', (e) => {
+        if (e.keyCode == 27) {
+          this.close();
+        }
+      });
+    }
   },
 
   methods: {
     close() {
+      if (this.onClose) {
+        this.onClose();
+      }
+
       this.$emit('close');
     }
   }
@@ -40,4 +54,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 </style>
