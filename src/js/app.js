@@ -11,7 +11,6 @@ import Heading from './components/Heading.vue';
 import Notification from './components/Notification.vue';
 import Modal from './components/Modal.vue';
 
-const ENV = 'development';
 export let bus = new Vue({});
 export let store = {
     user: '',
@@ -307,7 +306,6 @@ const app = new Vue({
     },
 
     data: {
-        env: ENV,
         store: store,
         isMenuActive: false,
         login: {

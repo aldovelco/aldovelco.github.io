@@ -759,7 +759,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var ENV = 'development';
 var bus = new Vue({});
 var store = {
     user: '',
@@ -831,7 +830,6 @@ var app = new Vue({
     },
 
     data: {
-        env: ENV,
         store: store,
         isMenuActive: false,
         login: {
