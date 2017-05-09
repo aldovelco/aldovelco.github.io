@@ -53,7 +53,8 @@ const app = new Vue({
         'x-level-item': LevelItem,
         'x-heading': Heading,
         'x-notification': Notification,
-        'x-modal': Modal
+        'x-modal': Modal,
+        'x-dropdown': require('./components/Dropdown.vue')
     },
 
     data: {

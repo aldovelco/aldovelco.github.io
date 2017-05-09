@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="icon" type="image/png" href="./public/images/favicon.png">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="./public/css/app.css">
 
@@ -14,7 +16,7 @@
 
 <body>
     <div id="app">
-        <x-hero>
+        <x-hero @login="login.activeModal = true">
             <template slot="body">
                 <x-level>
                     <x-level-item>
@@ -44,18 +46,17 @@
             </x-notification>
         </transition>
 
-        <button class="button" @click="login.activeModal = true">Login</button>
         <x-modal v-if="login.activeModal" @close="login.activeModal = false">
             <form @submit.prevent>
                 <div class="field">
-                    <label class="label">Username<span> *</span></label>
+                    <label class="label">Username</label>
                     <p class="control">
                         <input class="input" type="text" placeholder="Username" ref="userInput" v-model="login.username" required>
                     </p>
                 </div>
 
                 <div class="field">
-                    <label class="label">Password<span> *</span></label>
+                    <label class="label">Password</label>
                     <p class="control">
                         <input class="input" type="password" placeholder="Password" ref="passwordInput" v-model="login.password" required>
                     </p>

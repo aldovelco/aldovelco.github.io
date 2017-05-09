@@ -5,7 +5,7 @@
         <span> *</span>
       </label>
       <p class="control">
-        <input class="input" type="text" placeholder="Put your title here!" ref="titleInput" v-model="newPost.title" required>
+        <input class="input" type="text" placeholder="Put your title here!" ref="titleInput" v-model="newPost.title" required autofocus>
       </p>
     </div>
   
