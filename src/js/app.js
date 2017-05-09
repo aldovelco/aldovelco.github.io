@@ -20,24 +20,32 @@ export let store = {
             title: 'Test',
             subtitle: 'Test',
             body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!',
+            seeMore: true,
+            isLoading: false
         },
         {
             id: 1,
             title: 'Test',
             subtitle: 'Test',
             body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!',
+            seeMore: true,
+            isLoading: false
         },
         {
             id: 2,
             title: 'Test',
             subtitle: 'Test',
             body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!',
+            seeMore: true,
+            isLoading: false
         },
         {
             id: 3,
             title: 'Test',
             subtitle: 'Test',
             body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!',
+            seeMore: true,
+            isLoading: false
         },
         {
             id: 4,
@@ -142,7 +150,9 @@ Good goodbye
 (Don't you come back no more)
 Good goodbye
 Good goodbye
-(Don't you come back no more)`
+(Don't you come back no more)`,
+            seeMore: false,
+            isLoading: false
         },
         {
             id: 5,
@@ -208,7 +218,9 @@ Battle symphony
 Please just don’t give up on me
 And my eyes are wide awake
 For my battle symphony
-For my battle symphony`
+For my battle symphony`,
+            seeMore: false,
+            isLoading: false
         },
         {
             id: 6,
@@ -272,7 +284,9 @@ If I just let go, I'd be set free
 Holding on
 Why is everything so heavy?
 Why is everything so heavy?
-Why is everything so heavy?`
+Why is everything so heavy?`,
+            seeMore: false,
+            isLoading: false
         }
     ]
 };

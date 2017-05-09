@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-11">
         <h1 class="title">Blog
-          <span class="tag is-light">{{ posts.length }}</span>
+          <span class="tag is-primary">{{ posts.length }}</span>
         </h1>
       </div>
       <div class="column is-1">
@@ -17,14 +17,17 @@
       <x-new-post :on-submit="onSubmit"></x-new-post>
     </x-modal>
   
-    <x-card v-for="post in latestPosts" :key="post.id" class="post" :class="{'see-more': post.seeMore}">
-      <h2 class="title is-4">{{ post.title }}</h2>
-      <h3 class="subtitle is-6">{{ post.subtitle }}</h3>
-      <p class="body">{{ post.body }}</p>
-  
-      <p class="has-text-centered">
-        <button class="button btn-see-more" v-show="!post.seeMore" :class="seeMoreBtn" @click="more(post)">See more</button>
-      </p>
+    <x-card v-for="post in latestPosts" :key="post.id" class="post" :ref="'post' + post.id">
+      <span class="tag is-warning post-id">{{ `#${post.id + 1}` }}</span>
+      <div :class="{ 'see-more': !post.seeMore }">
+        <h2 class="title is-4">{{ post.title }}</h2>
+        <h3 class="subtitle is-6">{{ post.subtitle }}</h3>
+        <p class="body">{{ post.body }}</p>
+    
+        <p class="has-text-centered" v-if="!post.seeMore">
+          <button class="button is-primary is-outlined btn-see-more" :class="{ 'is-loading': post.isLoading }" @click="more(post)">See more</button>
+        </p>
+      </div>
     </x-card>
   </div>
 </template>
@@ -53,23 +56,19 @@ export default {
     }
   },
 
-  created() {
-    this.posts.map(post => {
-      post.seeMore = false;
-
-      return post;
-    });
-  },
-
   computed: {
     latestPosts() {
-      return this.posts.sort((a, b) => a.id < b.id);
-    },
+      return this.posts.sort((a, b) => {
+        if (a.id > b.id) {
+          return -1;
+        }
+        
+        if (a.id < b.id) {
+          return 1;
+        }
 
-    seeMoreBtn() {
-      return {
-
-      }
+        return 0;
+      });
     }
   },
 
@@ -79,15 +78,16 @@ export default {
     },
 
     more(post) {
-      post.seeMore = true;
+      post.isLoading = true;
+
+      setTimeout(function() {
+        post.seeMore = true;
+        post.isLoading = false;
+      }, 3000);
     },
 
     showNewPost() {
       this.isActiveModal = true;
-
-      this.$nextTick(() => {
-        this.$refs.titleInput.focus();
-      });
     },
 
     onSubmit() {
@@ -104,18 +104,32 @@ export default {
 <style lang="scss" scoped>
 .post {
   margin-bottom: 2em;
-  max-height: 30em;
-  overflow-y: hidden;
   position: relative;
+  word-wrap: break-word;
 
-  .see-more {
-    max-height: inherit;
-    overflow-y: inherit;
+  .post-id {
+    position: absolute;
+    top: -1em;
+    left: -1em;
+  }
+
+  .btn-see-more {
+    position: absolute;
+    bottom: 1em;
+
+    &:focus {
+      background-color: white;
+    }
   }
 
   .body {
     white-space: pre-wrap;
   }
+}
+
+.see-more {
+  overflow-y: hidden;
+  max-height: 30em;  
 }
 
 .addPost {

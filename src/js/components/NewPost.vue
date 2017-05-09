@@ -66,12 +66,25 @@ export default {
 
   methods: {
     addPost() {
-      this.store.posts.push({
+      let post = {
         id: this.store.posts.length + 1,
         title: this.newPost.title,
         subtitle: this.newPost.subtitle,
-        body: this.newPost.body
-      });
+        body: this.newPost.body,
+        seeMore: true,
+        isLoading: false
+      };
+
+      let postMaxLength = this.newPost.body.length > 300;
+      let postPreviewMaxLines = this.newPost.body.split('\n').length > 5;
+
+      console.debug({postLength: postMaxLength, postMaxLines: postPreviewMaxLines});
+
+      if (postPreviewMaxLines || postMaxLength) {
+        post.seeMore = false;
+      }
+      
+      this.store.posts.push(post);
 
       this.clearInputs();
 
