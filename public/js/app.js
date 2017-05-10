@@ -5666,6 +5666,66 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -7710,7 +7770,7 @@ exports.push([module.i, "", ""]);
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
-exports.push([module.i, "", ""]);
+exports.push([module.i, "\n.skill[data-v-9100a0b8] {\n  margin-bottom: 1em;\n}\n.skill[data-v-9100a0b8]:hover {\n    background-color: #222;\n    color: white;\n}\n", ""]);
 
 /***/ }),
 /* 68 */
@@ -8767,12 +8827,80 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _vm._m(0)
+},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "content"
   }, [_c('h1', {
     staticClass: "title"
-  }, [_vm._v("Home")]), _vm._v(" "), _c('x-card', [_c('p', [_vm._v("\n      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!\n    ")])])], 1)
-},staticRenderFns: []}
+  }, [_vm._v("Home")]), _vm._v(" "), _c('div', {
+    staticClass: "tile is-ancestor"
+  }, [_c('div', {
+    staticClass: "tile is-parent"
+  }, [_c('article', {
+    staticClass: "tile is-child box"
+  }, [_c('p', {
+    staticClass: "title is-4"
+  }, [_vm._v("Education")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p', {
+    staticClass: "subtitle"
+  }, [_vm._v("Universidad Tecmilenio")]), _vm._v(" "), _c('p', {
+    staticClass: "subtitle is-6"
+  }, [_vm._v("Bachelor's Degree, GPA 4.0")]), _vm._v(" "), _c('p', [_vm._v("Computer Software Engineering")]), _vm._v(" "), _c('p', [_vm._v("2014 - 2018")]), _vm._v(" "), _c('p')])]), _vm._v(" "), _c('div', {
+    staticClass: "tile is-parent"
+  }, [_c('article', {
+    staticClass: "tile is-child box"
+  }, [_c('p', {
+    staticClass: "title is-4"
+  }, [_vm._v("Skills")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('div', {
+    staticClass: "content"
+  }, [_c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("C#")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("PHP")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("Laravel")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("Xamarin")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("Android")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("Java")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("JavaScript")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("HTML")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("CSS")]), _vm._v(" "), _c('span', {
+    staticClass: "tag is-large skill"
+  }, [_vm._v("SQL")])])])])]), _vm._v(" "), _c('div', {
+    staticClass: "tile is-ancestor"
+  }, [_c('div', {
+    staticClass: "tile is-parent"
+  }, [_c('article', {
+    staticClass: "tile is-child box"
+  }, [_c('p', {
+    staticClass: "title is-4"
+  }, [_vm._v("Experience")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p', {
+    staticClass: "subtitle"
+  }, [_vm._v("Hypertek")]), _vm._v(" "), _c('p', [_vm._v("\n          Oct 2015 - Mar 2017 | 1 yr 6 mos\n          "), _c('br'), _vm._v(" Monterrey\n        ")]), _vm._v(" "), _c('p', [_vm._v("Mobile applications development with Xamarin and full stack web development.")]), _vm._v(" "), _c('p', {
+    staticClass: "subtitle"
+  }, [_vm._v("Consultant")]), _vm._v(" "), _c('p', [_vm._v("\n          Feb 2017 - Current\n          "), _c('br'), _vm._v(" Monterrey\n        ")]), _vm._v(" "), _c('p', [_vm._v("Functional Testing.")])])]), _vm._v(" "), _c('div', {
+    staticClass: "tile is-vertical is-4"
+  }, [_c('div', {
+    staticClass: "tile"
+  }, [_c('div', {
+    staticClass: "tile is-parent is-vertical"
+  }, [_c('article', {
+    staticClass: "tile is-child box"
+  }, [_c('p', {
+    staticClass: "title is-4"
+  }, [_vm._v("Languages")]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p', {
+    staticClass: "subtitle"
+  }, [_vm._v("Spanish")]), _vm._v(" "), _c('p', {
+    staticClass: "subtitle"
+  }, [_vm._v("English")])])])])])])])
+}]}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
