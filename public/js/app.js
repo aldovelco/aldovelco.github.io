@@ -759,17 +759,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+var ENV = 'development';
 var bus = new Vue({});
 var store = {
     user: '',
     posts: [{
-        id: 0,
-        title: 'Test',
-        subtitle: 'Test',
-        body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!',
-        seeMore: true,
-        isLoading: false
-    }, {
         id: 1,
         title: 'Test',
         subtitle: 'Test',
@@ -830,6 +824,7 @@ var app = new Vue({
     },
 
     data: {
+        env: ENV,
         store: store,
         isMenuActive: false,
         login: {
@@ -5498,6 +5493,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 
@@ -7720,7 +7717,7 @@ exports.push([module.i, "", ""]);
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(0)();
-exports.push([module.i, "\n.post[data-v-a5e85e32] {\n  margin-bottom: 2em;\n  position: relative;\n  word-wrap: break-word;\n}\n.post .post-id[data-v-a5e85e32] {\n    position: absolute;\n    top: -1em;\n    left: -1em;\n}\n.post .btn-see-more[data-v-a5e85e32] {\n    position: absolute;\n    bottom: 1em;\n}\n.post .btn-see-more[data-v-a5e85e32]:focus {\n      background-color: white;\n}\n.post .body[data-v-a5e85e32] {\n    white-space: pre-wrap;\n}\n.see-more[data-v-a5e85e32] {\n  overflow-y: hidden;\n  max-height: 30em;\n}\n.addPost[data-v-a5e85e32] {\n  border-radius: 50%;\n  background-color: #00d1b2;\n  color: white;\n  cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.post[data-v-a5e85e32] {\n  margin-bottom: 2em;\n  position: relative;\n  word-wrap: break-word;\n}\n.post .post-id[data-v-a5e85e32] {\n    position: absolute;\n    top: -1em;\n    left: -1em;\n}\n.post .btn-see-more[data-v-a5e85e32] {\n    position: absolute;\n    bottom: 1em;\n}\n.post .btn-see-more[data-v-a5e85e32]:focus {\n      background-color: white;\n}\n.post .body[data-v-a5e85e32] {\n    white-space: pre-wrap;\n}\n.see-more[data-v-a5e85e32] {\n  overflow-y: hidden;\n  max-height: 30em;\n}\n.addPost[data-v-a5e85e32] {\n  border-radius: 50%;\n  background-color: #00d1b2;\n  color: white;\n  cursor: pointer;\n}\n.addPost[data-v-a5e85e32]:hover {\n    color: #00d1b2;\n    background-color: white;\n}\n", ""]);
 
 /***/ }),
 /* 70 */
@@ -8842,7 +8839,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "post"
     }, [_c('span', {
       staticClass: "tag is-warning post-id"
-    }, [_vm._v(_vm._s(("#" + (post.id + 1))))]), _vm._v(" "), _c('div', {
+    }, [_vm._v(_vm._s(("#" + (post.id))))]), _vm._v(" "), _c('div', {
       class: {
         'see-more': !post.seeMore
       }
@@ -8850,7 +8847,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "title is-4"
     }, [_vm._v(_vm._s(post.title))]), _vm._v(" "), _c('h3', {
       staticClass: "subtitle is-6"
-    }, [_vm._v(_vm._s(post.subtitle))]), _vm._v(" "), _c('p', {
+    }, [_vm._v(_vm._s(post.subtitle))]), _vm._v(" "), _c('hr'), _vm._v(" "), _c('p', {
       staticClass: "body"
     }, [_vm._v(_vm._s(post.body))]), _vm._v(" "), (!post.seeMore) ? _c('p', {
       staticClass: "has-text-centered"

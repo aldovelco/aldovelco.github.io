@@ -11,18 +11,11 @@ import Heading from './components/Heading.vue';
 import Notification from './components/Notification.vue';
 import Modal from './components/Modal.vue';
 
+const ENV = 'development';
 export let bus = new Vue({});
 export let store = {
     user: '',
     posts: [{
-            id: 0,
-            title: 'Test',
-            subtitle: 'Test',
-            body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus veniam illo dolores id, quae maiores, quam laborum blanditiis alias iste amet provident expedita quis nihil iusto illum quidem odio!',
-            seeMore: true,
-            isLoading: false
-        },
-        {
             id: 1,
             title: 'Test',
             subtitle: 'Test',
@@ -306,6 +299,7 @@ const app = new Vue({
     },
 
     data: {
+        env: ENV,
         store: store,
         isMenuActive: false,
         login: {

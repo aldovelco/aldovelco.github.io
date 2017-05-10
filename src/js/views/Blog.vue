@@ -18,10 +18,12 @@
     </x-modal>
   
     <x-card v-for="post in latestPosts" :key="post.id" class="post" :ref="'post' + post.id">
-      <span class="tag is-warning post-id">{{ `#${post.id + 1}` }}</span>
+      <span class="tag is-warning post-id">{{ `#${post.id}` }}</span>
       <div :class="{ 'see-more': !post.seeMore }">
         <h2 class="title is-4">{{ post.title }}</h2>
         <h3 class="subtitle is-6">{{ post.subtitle }}</h3>
+        <hr>
+
         <p class="body">{{ post.body }}</p>
     
         <p class="has-text-centered" v-if="!post.seeMore">
@@ -137,5 +139,10 @@ export default {
   background-color: #00d1b2;
   color: white;
   cursor: pointer;
+
+  &:hover {
+    color: #00d1b2;
+    background-color: white;
+  }
 }
 </style>
