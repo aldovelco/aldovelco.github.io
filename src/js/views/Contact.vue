@@ -66,6 +66,14 @@ export default {
         type: 'info',
         message: 'An email has been sent to Aldo Velasco'
       });
+
+      this.clearInputs();
+    },
+
+    clearInputs() {
+      this.email.from = '';
+      this.email.subject = '';
+      this.email.message = '';
     }
   }
 }

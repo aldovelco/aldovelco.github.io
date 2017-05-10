@@ -5636,6 +5636,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         type: 'info',
         message: 'An email has been sent to Aldo Velasco'
       });
+
+      this.clearInputs();
+    },
+    clearInputs: function clearInputs() {
+      this.email.from = '';
+      this.email.subject = '';
+      this.email.message = '';
     }
   }
 });
